@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WinBD | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<main class="dashboard-page">
+
+<div class="dashboard-container">
+
+<!-- Header -->
+
+<header class="dashboard-header">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-coins"></i>
+
+        <span>WinBD</span>
+
+    </div>
+
+    <div class="user-info">
+
+        <img
+            id="profileImage"
+            src="assets/images/avatar/default.png"
+            alt="Profile">
+
+        <div>
+
+            <h3 id="username">Guest</h3>
+
+            <small>Online</small>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- Wallet Card -->
+
+<section class="wallet-card">
+
+    <h2>Wallet Balance</h2>
+
+    <h1 id="walletBalance">৳ 0.00</h1>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+        <h4>Total Deposit</h4>
+
+        <h3 id="totalDeposit">৳ 0</h3>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+        <h4>Total Withdraw</h4>
+
+        <h3 id="totalWithdraw">৳ 0</h3>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h4>Investment</h4>
+
+        <h3 id="totalInvestment">৳ 0</h3>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-gift"></i>
+
+        <h4>Bonus</h4>
+
+        <h3 id="totalBonus">৳ 0</h3>
+
+    </div>
+
+</section>
+
+<!-- Quick Actions -->
+
+<section class="quick-actions">
+
+    <a href="deposit.html" class="action-card">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <span>Deposit</span>
+
+    </a>
+
+    <a href="withdraw.html" class="action-card">
+
+        <i class="fa-solid fa-money-bill-transfer"></i>
+
+        <span>Withdraw</span>
+
+    </a>
+
+    <a href="transactions.html" class="action-card">
+
+        <i class="fa-solid fa-clock-rotate-left"></i>
+
+        <span>History</span>
+
+    </a>
+
+    <a href="profile.html" class="action-card">
+
+        <i class="fa-solid fa-user"></i>
+
+        <span>Profile</span>
+
+    </a>
+
+</section>
