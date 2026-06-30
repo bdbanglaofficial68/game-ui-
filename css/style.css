@@ -1,1 +1,333 @@
+/* ========================================
+   LOGIN FORM
+======================================== */
 
+#loginForm{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.input-group label{
+    color:#d6d6d6;
+    font-size:14px;
+    font-weight:500;
+}
+
+.input-box{
+    position:relative;
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.input-box i:first-child{
+    position:absolute;
+    left:18px;
+    color:#bdbdbd;
+    font-size:16px;
+}
+
+.input-box input{
+    width:100%;
+    height:56px;
+
+    padding-left:50px;
+    padding-right:55px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.input-box input::placeholder{
+    color:#9f9f9f;
+}
+
+.input-box input:focus{
+
+    border-color:#FFD54F;
+
+    box-shadow:
+        0 0 20px rgba(255,213,79,.25);
+
+}
+
+.eye-btn{
+
+    position:absolute;
+
+    right:8px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    color:#cfcfcf;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    transition:.25s;
+
+}
+
+.eye-btn:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ========================================
+   OPTIONS
+======================================== */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:14px;
+
+}
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#d9d9d9;
+
+    cursor:pointer;
+
+}
+
+.remember input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#FFD54F;
+
+}
+
+.options a{
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.options a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ========================================
+   LOGIN BUTTON
+======================================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #FFD54F,
+        #FF9800
+    );
+
+    color:#111;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 15px 35px rgba(255,193,7,.35);
+
+}
+
+.login-btn:active{
+
+    transform:scale(.98);
+
+}
+
+.login-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:28px 0;
+
+    color:#999;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ========================================
+   SOCIAL LOGIN
+======================================== */
+
+.social-login{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.social-login button{
+
+    height:54px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.06);
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.social-login button i{
+
+    margin-right:8px;
+
+}
+
+.google:hover{
+
+    background:#EA4335;
+
+}
+
+.facebook:hover{
+
+    background:#1877F2;
+
+}
+
+/* ========================================
+   REGISTER
+======================================== */
+
+.register{
+
+    text-align:center;
+
+    margin-top:28px;
+
+    color:#bfbfbf;
+
+    font-size:15px;
+
+}
+
+.register a{
+
+    color:#FFD54F;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.register a:hover{
+
+    color:#fff;
+
+}
