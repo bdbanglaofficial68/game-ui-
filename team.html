@@ -1,103 +1,169 @@
-// ==========================================
-// WinBD Team
-// team.js - Part 1
-// ==========================================
+<!DOCTYPE html>
+<html lang="en">
 
-document.addEventListener("DOMContentLoaded", () => {
+<head>
 
-    const teamTable =
-        document.querySelector("#teamTable tbody");
+    <meta charset="UTF-8">
 
-    const searchMember =
-        document.getElementById("searchMember");
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    const levelFilter =
-        document.getElementById("levelFilter");
+    <title>WinBD | My Team</title>
 
-    const referralCode =
-        document.getElementById("referralCode");
+    <link rel="stylesheet" href="css/style.css">
 
-    const copyReferral =
-        document.getElementById("copyReferral");
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    const totalMembers =
-        document.getElementById("totalMembers");
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    const directMembers =
-        document.getElementById("directMembers");
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
-    const totalCommission =
-        document.getElementById("totalCommission");
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    const loader =
-        document.getElementById("loader");
+</head>
 
-    const toast =
-        document.getElementById("toast");
+<body>
 
-    let members =
-        JSON.parse(localStorage.getItem("teamMembers")) || [
+<div class="background-blur"></div>
 
-        {
-            username: "player001",
-            level: "Level 1",
-            commission: 250,
-            status: "Active"
-        },
+<main class="team-page">
 
-        {
-            username: "player002",
-            level: "Level 2",
-            commission: 120,
-            status: "Pending"
-        },
+<div class="team-card">
 
-        {
-            username: "player003",
-            level: "Level 3",
-            commission: 80,
-            status: "Active"
-        }
+<div class="page-header">
 
-    ];
+<h2>
 
-    function showToast(message, success = true) {
+<i class="fa-solid fa-users"></i>
 
-        if (!toast) return;
+My Team
 
-        toast.textContent = message;
+</h2>
 
-        toast.className = "toast show";
+<p>
 
-        toast.style.background =
-            success ? "#22c55e" : "#ef4444";
+Manage your referrals and team members.
 
-        setTimeout(() => {
+</p>
 
-            toast.classList.remove("show");
+</div>
 
-        }, 3000);
+<!-- Summary Cards -->
 
-    }
+<div class="stats-grid">
 
-    function renderTable(data) {
+<div class="stat-card">
 
-        teamTable.innerHTML = "";
+<h4>Total Members</h4>
 
-        if (data.length === 0) {
+<h2 id="totalMembers">0</h2>
 
-            teamTable.innerHTML = `
-                <tr>
-                    <td colspan="4">No team members found.</td>
-                </tr>
-            `;
+</div>
 
-            return;
+<div class="stat-card">
 
-        }
+<h4>Direct Referrals</h4>
 
-        data.forEach(member => {
+<h2 id="directMembers">0</h2>
 
-            teamTable.innerHTML += `
+</div>
 
-           
+<div class="stat-card">
+
+<h4>Total Commission</h4>
+
+<h2 id="totalCommission">৳0.00</h2>
+
+</div>
+
+</div>
+
+<!-- Referral Code -->
+
+<div class="wallet-box">
+
+<h3>Your Referral Code</h3>
+
+<div class="referral-box">
+
+<input
+type="text"
+id="referralCode"
+value="WINBD2026"
+readonly>
+
+<button
+type="button"
+id="copyReferral">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Search -->
+
+<div class="input-group">
+
+<label>Search Team Member</label>
+
+<input
+type="text"
+id="searchMember"
+placeholder="Search by username...">
+
+</div>
+
+<!-- Level Filter -->
+
+<div class="input-group">
+
+<label>Filter by Level</label>
+
+<select id="levelFilter">
+
+<option value="">All Levels</option>
+
+<option value="Level 1">Level 1</option>
+
+<option value="Level 2">Level 2</option>
+
+<option value="Level 3">Level 3</option>
+
+</select>
+
+</div>
+
+<!-- Members Table -->
+
+<div class="table-responsive">
+
+<table id="teamTable">
+
+<thead>
+
+<tr>
+
+<th>Username</th>
+
+<th>Level</th>
+
+<th>Commission</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
