@@ -147,3 +147,107 @@ id="smsNotification"
 checked>
 
 </div>
+    <!-- Privacy -->
+
+<div class="setting-item">
+
+    <label>
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        Private Profile
+
+    </label>
+
+    <input
+        type="checkbox"
+        id="privateProfile">
+
+</div>
+
+<!-- Auto Logout -->
+
+<div class="setting-item">
+
+    <label>
+
+        <i class="fa-solid fa-clock"></i>
+
+        Auto Logout (30 Minutes)
+
+    </label>
+
+    <input
+        type="checkbox"
+        id="autoLogout"
+        checked>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="profile-actions">
+
+    <button
+        type="button"
+        id="changePassword"
+        class="secondary-btn">
+
+        <i class="fa-solid fa-lock"></i>
+
+        Change Password
+
+    </button>
+
+    <button
+        type="submit"
+        class="login-btn">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Save Settings
+
+    </button>
+
+    <button
+        type="button"
+        id="logoutBtn"
+        class="danger-btn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</div>
+
+</form>
+
+</div>
+
+</main>
+
+<!-- Loader -->
+
+<div id="loader" class="loader hidden">
+
+    <div class="spinner"></div>
+
+</div>
+
+<!-- Toast -->
+
+<div id="toast" class="toast">
+
+    Message
+
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>
