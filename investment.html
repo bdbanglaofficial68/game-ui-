@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WinBD | Investment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<main class="investment-page">
+
+<div class="investment-card">
+
+<div class="page-header">
+
+<h2>
+
+<i class="fa-solid fa-chart-line"></i>
+
+Investment Plans
+
+</h2>
+
+<p>
+
+Choose an investment plan that suits you.
+
+</p>
+
+</div>
+
+<!-- Wallet Balance -->
+
+<div class="wallet-box">
+
+<h3>Available Balance</h3>
+
+<h1 id="walletBalance">৳ 0.00</h1>
+
+</div>
+
+<form id="investmentForm">
+
+<!-- Plan Selection -->
+
+<div class="input-group">
+
+<label>Select Investment Plan</label>
+
+<select id="plan" required>
+
+<option value="">Choose Plan</option>
+
+<option value="basic"
+        data-roi="2"
+        data-days="30">
+
+Basic Plan (2% Daily - 30 Days)
+
+</option>
+
+<option value="silver"
+        data-roi="3"
+        data-days="45">
+
+Silver Plan (3% Daily - 45 Days)
+
+</option>
+
+<option value="gold"
+        data-roi="4"
+        data-days="60">
+
+Gold Plan (4% Daily - 60 Days)
+
+</option>
+
+<option value="vip"
+        data-roi="5"
+        data-days="90">
+
+VIP Plan (5% Daily - 90 Days)
+
+</option>
+
+</select>
+
+</div>
+
+<!-- Investment Amount -->
+
+<div class="input-group">
+
+<label>Investment Amount</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<input
+type="number"
+id="amount"
+placeholder="Minimum ৳500"
+min="500"
+required>
+
+</div>
+
+</div>
+
+<!-- ROI Preview -->
+
+<div class="wallet-box">
+
+<h3>Estimated Daily Profit</h3>
+
+<h2 id="dailyProfit">৳ 0.00</h2>
+
+</div>
+
+<div class="wallet-box">
+
+<h3>Investment Duration</h3>
+
+<h2 id="duration">0 Days</h2>
+
+</div>
