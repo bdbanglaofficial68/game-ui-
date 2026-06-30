@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WinBD | Withdraw</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<main class="withdraw-page">
+
+<div class="withdraw-card">
+
+<div class="page-header">
+
+<h2>
+
+<i class="fa-solid fa-money-bill-transfer"></i>
+
+Withdraw Balance
+
+</h2>
+
+<p>
+
+Withdraw your available balance securely.
+
+</p>
+
+</div>
+
+<!-- Wallet Balance -->
+
+<div class="wallet-box">
+
+<h3>Available Balance</h3>
+
+<h1 id="walletBalance">৳ 0.00</h1>
+
+</div>
+
+<form id="withdrawForm">
+
+<!-- Withdraw Amount -->
+
+<div class="input-group">
+
+<label>Withdraw Amount</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-sack-dollar"></i>
+
+<input
+type="number"
+id="amount"
+placeholder="Enter withdraw amount"
+min="100"
+required>
+
+</div>
+
+</div>
+
+<!-- Payment Method -->
+
+<div class="input-group">
+
+<label>Withdraw Method</label>
+
+<select id="method" required>
+
+<option value="">Select Method</option>
+
+<option value="bkash">bKash</option>
+
+<option value="nagad">Nagad</option>
+
+<option value="rocket">Rocket</option>
+
+<option value="bank">Bank Transfer</option>
+
+</select>
+
+</div>
+
+<!-- Account Number -->
+
+<div class="input-group">
+
+<label>Account Number</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+<input
+type="text"
+id="accountNumber"
+placeholder="Enter Account Number"
+required>
+
+</div>
+
+</div>
+
+<!-- Security PIN -->
+
+<div class="input-group">
+
+<label>Security PIN</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+id="pin"
+placeholder="Enter Security PIN"
+maxlength="6"
+required>
+
+</div>
+
+</div>
