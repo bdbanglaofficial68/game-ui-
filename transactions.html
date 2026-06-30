@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WinBD | Transactions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<main class="transactions-page">
+
+<div class="transactions-card">
+
+<div class="page-header">
+
+<h2>
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+Transaction History
+
+</h2>
+
+<p>
+
+View all your deposits, withdrawals and other account activities.
+
+</p>
+
+</div>
+
+<!-- Filters -->
+
+<div class="filter-box">
+
+<input
+type="text"
+id="searchTransaction"
+placeholder="Search Transaction ID...">
+
+<select id="typeFilter">
+
+<option value="">All Types</option>
+
+<option value="Deposit">Deposit</option>
+
+<option value="Withdraw">Withdraw</option>
+
+<option value="Investment">Investment</option>
+
+<option value="Bonus">Bonus</option>
+
+</select>
+
+<select id="statusFilter">
+
+<option value="">All Status</option>
+
+<option value="Approved">Approved</option>
+
+<option value="Pending">Pending</option>
+
+<option value="Rejected">Rejected</option>
+
+</select>
+
+<input
+type="date"
+id="dateFilter">
+
+</div>
+
+<!-- Transactions Table -->
+
+<div class="table-responsive">
+
+<table id="transactionsTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Type</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>TRX100001</td>
+
+<td>Deposit</td>
+
+<td>৳1000</td>
+
+<td class="success">
+
+Approved
+
+</td>
+
+<td>30 Jun 2026</td>
+
+</tr>
+
+<tr>
+
+<td>TRX100002</td>
+
+<td>Withdraw</td>
+
+<td>৳500</td>
+
+<td class="pending">
+
+Pending
+
+</td>
+
+<td>29 Jun 2026</td>
+
+</tr>
