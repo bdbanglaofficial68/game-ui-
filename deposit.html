@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>WinBD | Deposit</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<main class="deposit-page">
+
+<div class="deposit-card">
+
+<div class="page-header">
+
+<h2>
+
+<i class="fa-solid fa-wallet"></i>
+
+Deposit Balance
+
+</h2>
+
+<p>
+
+Securely add funds to your WinBD account.
+
+</p>
+
+</div>
+
+<!-- Wallet Balance -->
+
+<div class="wallet-box">
+
+<h3>Current Balance</h3>
+
+<h1>৳ 0.00</h1>
+
+</div>
+
+<form id="depositForm">
+
+<!-- Amount -->
+
+<div class="input-group">
+
+<label>Deposit Amount</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<input
+type="number"
+id="amount"
+placeholder="Enter Amount"
+min="100"
+required>
+
+</div>
+
+</div>
+
+<!-- Payment Method -->
+
+<div class="input-group">
+
+<label>Select Payment Method</label>
+
+<select id="paymentMethod" required>
+
+<option value="">Choose Method</option>
+
+<option value="bkash">bKash</option>
+
+<option value="nagad">Nagad</option>
+
+<option value="rocket">Rocket</option>
+
+<option value="bank">Bank Transfer</option>
+
+</select>
+
+</div>
+
+<!-- Transaction ID -->
+
+<div class="input-group">
+
+<label>Transaction ID</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-receipt"></i>
+
+<input
+type="text"
+id="trxid"
+placeholder="Enter Transaction ID"
+required>
+
+</div>
+
+</div>
